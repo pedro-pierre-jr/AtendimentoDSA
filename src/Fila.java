@@ -6,7 +6,7 @@ public class Fila {
         return primeiro == null;
     }
 
-    public void enfileirar(Pessoa p) {
+    public void enfileira(Pessoa p) {
         NoFila novo = new NoFila(p);
         if (filaVazia()) {
             primeiro = novo;
@@ -17,7 +17,7 @@ public class Fila {
         }
     }
 
-    public Pessoa desenfileirar() {
+    public Pessoa desenfileira() {
         if (filaVazia()) {
             return null;
         }
