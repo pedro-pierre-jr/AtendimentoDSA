@@ -100,7 +100,7 @@ public class ArvoreBinaria {
         return atual.getInfo().getId();
     }
 
-    // extra para verificar se uma pessoa com esse nome já foi atendida
+    //chama rec pra encontrar pessoa na base de atendimento
     public boolean foiAtendida(String nome) {
         return buscaNomeRec(nome, raiz);
     }
@@ -113,7 +113,7 @@ public class ArvoreBinaria {
 
     public void imprimirEmOrdem() {
         if (estaVazia()) {
-            System.out.println("Nenhum atendimento registrado.");
+            System.out.println("Não foi encontrado nenhum atendimento");
         } else {
             imprimirRec(raiz);
         }
