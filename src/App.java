@@ -42,7 +42,7 @@ public class App {
                     } else {
                         Pessoa atendida = fila.desenfileira();
                         System.out.println("Atendendo: " + atendida);
-                        arvore.inserir(atendida);
+                        arvore.insere(atendida);
                     }
                     break;
 
